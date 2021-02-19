@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proxima-nova-regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="proxima-nova-semibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubscribeButton" customModule="ProEdu" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="hA2-VE-tdk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5L-df-znG" customClass="RoundedView" customModule="ProEdu" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAx-Ke-pjd">
+                            <rect key="frame" x="363.5" y="21" width="30.5" height="21"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F55-E7-gkc">
+                                    <rect key="frame" x="0.0" y="0.0" width="30.5" height="21"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                                    <color key="textColor" name="AccentColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="F55-E7-gkc" firstAttribute="leading" secondItem="GAx-Ke-pjd" secondAttribute="leading" id="AIh-xS-ajz"/>
+                                <constraint firstItem="F55-E7-gkc" firstAttribute="top" secondItem="GAx-Ke-pjd" secondAttribute="top" id="ILc-oE-bkV"/>
+                                <constraint firstAttribute="bottom" secondItem="F55-E7-gkc" secondAttribute="bottom" id="Mbg-vm-vb7"/>
+                                <constraint firstAttribute="trailing" secondItem="F55-E7-gkc" secondAttribute="trailing" id="SGe-r2-M9N"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ruble" translatesAutoresizingMaskIntoConstraints="NO" id="Vnn-J7-hVR">
+                            <rect key="frame" x="352.5" y="27" width="9" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="9" id="Ffh-Ed-8rb"/>
+                                <constraint firstAttribute="height" constant="10" id="Lpm-YV-qNX"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04i-h1-2xP">
+                            <rect key="frame" x="342" y="42" width="52" height="14.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="в месяц" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0t-xr-3eK">
+                                    <rect key="frame" x="0.0" y="-2" width="52" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                    <color key="textColor" name="GrayColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="n0t-xr-3eK" secondAttribute="trailing" id="Oep-gL-E8V"/>
+                                <constraint firstAttribute="bottom" secondItem="n0t-xr-3eK" secondAttribute="bottom" id="VSG-3a-UNd"/>
+                                <constraint firstItem="n0t-xr-3eK" firstAttribute="top" secondItem="04i-h1-2xP" secondAttribute="top" constant="-2" id="csx-sD-wwM"/>
+                                <constraint firstItem="n0t-xr-3eK" firstAttribute="leading" secondItem="04i-h1-2xP" secondAttribute="leading" id="sQg-yX-dvQ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Месячная подписка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXO-jZ-quQ">
+                            <rect key="frame" x="20" y="19" width="168" height="21"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                            <color key="textColor" name="TitleColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нужен текст" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayw-f0-Y4c">
+                            <rect key="frame" x="20" y="40" width="83" height="16.5"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                            <color key="textColor" name="GrayColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="04i-h1-2xP" secondAttribute="trailing" constant="20" id="Dxc-0H-zlb"/>
+                        <constraint firstItem="GAx-Ke-pjd" firstAttribute="leading" secondItem="Vnn-J7-hVR" secondAttribute="trailing" constant="2" id="TTs-cZ-2Vf"/>
+                        <constraint firstAttribute="trailing" secondItem="GAx-Ke-pjd" secondAttribute="trailing" constant="20" id="bXz-ph-qdt"/>
+                        <constraint firstItem="04i-h1-2xP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ayw-f0-Y4c" secondAttribute="trailing" constant="20" id="hfh-DE-2EL"/>
+                        <constraint firstItem="Ayw-f0-Y4c" firstAttribute="leading" secondItem="t5L-df-znG" secondAttribute="leading" constant="20" id="oYB-dT-nah"/>
+                        <constraint firstItem="Vnn-J7-hVR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eXO-jZ-quQ" secondAttribute="trailing" constant="20" id="oYr-Zc-jsI"/>
+                        <constraint firstItem="eXO-jZ-quQ" firstAttribute="top" secondItem="t5L-df-znG" secondAttribute="top" constant="19" id="qIF-zv-5lz"/>
+                        <constraint firstItem="eXO-jZ-quQ" firstAttribute="leading" secondItem="t5L-df-znG" secondAttribute="leading" constant="20" id="uX9-yx-E0R"/>
+                        <constraint firstItem="04i-h1-2xP" firstAttribute="top" secondItem="GAx-Ke-pjd" secondAttribute="bottom" id="vtG-ks-vXU"/>
+                        <constraint firstItem="GAx-Ke-pjd" firstAttribute="top" secondItem="t5L-df-znG" secondAttribute="top" constant="21" id="w8t-bO-r0c"/>
+                        <constraint firstItem="Vnn-J7-hVR" firstAttribute="bottom" secondItem="GAx-Ke-pjd" secondAttribute="bottom" constant="-5" id="ya4-ED-3HI"/>
+                        <constraint firstItem="Ayw-f0-Y4c" firstAttribute="top" secondItem="eXO-jZ-quQ" secondAttribute="bottom" id="ymO-tb-8b8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zy1-rX-A60">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                    <connections>
+                        <action selector="action" destination="-1" eventType="touchUpInside" id="CMF-wI-jBt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="t5L-df-znG" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4J9-Nc-a3f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t5L-df-znG" secondAttribute="trailing" id="5Gq-eh-SNR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zy1-rX-A60" secondAttribute="bottom" id="7CE-uA-9z8"/>
+                <constraint firstItem="Zy1-rX-A60" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HwX-lL-U6F"/>
+                <constraint firstItem="Zy1-rX-A60" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TU9-U1-20d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zy1-rX-A60" secondAttribute="trailing" id="ZRR-1x-iIs"/>
+                <constraint firstItem="t5L-df-znG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lTj-hb-MRC"/>
+                <constraint firstItem="t5L-df-znG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="peS-Wa-dFc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.57971014492756" y="393.08035714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_ruble" width="471" height="512"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.2630000114440918" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayColor">
+            <color red="0.41200000047683716" green="0.41200000047683716" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.082000002264976501" green="0.059000000357627869" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

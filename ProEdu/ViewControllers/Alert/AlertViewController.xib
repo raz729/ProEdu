@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proxima-nova-bold.ttf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="proxima-nova-regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertViewController" customModule="ProEdu" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="kT4-Ol-ioo" id="4QY-Tg-RaB"/>
+                <outlet property="imageView" destination="F1n-ow-etl" id="HIn-zy-LLW"/>
+                <outlet property="messageLabel" destination="B7a-fw-TU4" id="pfu-N2-VJQ"/>
+                <outlet property="titleLabel" destination="a7M-q0-oOV" id="AT4-Uw-SND"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeG-zr-dhB" customClass="CustomView" customModule="ProEdu" customModuleProvider="target">
+                    <rect key="frame" x="20" y="286.66666666666669" width="350" height="281.00000000000006"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert_error" translatesAutoresizingMaskIntoConstraints="NO" id="F1n-ow-etl">
+                            <rect key="frame" x="145" y="30" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="Myf-dr-JRF"/>
+                                <constraint firstAttribute="width" secondItem="F1n-ow-etl" secondAttribute="height" id="fu4-oT-lI2"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ошибка!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7M-q0-oOV">
+                            <rect key="frame" x="8" y="120" width="334" height="22"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="18"/>
+                            <color key="textColor" name="TitleColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст об ошибке обработки данных" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7a-fw-TU4">
+                            <rect key="frame" x="8" y="142" width="334" height="22"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                            <color key="textColor" name="TitleColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT4-Ol-ioo" customClass="CustomButton" customModule="ProEdu" customModuleProvider="target">
+                            <rect key="frame" x="20" y="194" width="310" height="57"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="5w4-GS-koY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="14"/>
+                            <state key="normal" title="Повторить">
+                                <color key="titleColor" name="AccentColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="AccentColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="closeAction" destination="-1" eventType="touchUpInside" id="5Hq-ty-6uv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="B7a-fw-TU4" secondAttribute="trailing" constant="8" id="2a5-w0-nZL"/>
+                        <constraint firstItem="F1n-ow-etl" firstAttribute="top" secondItem="UeG-zr-dhB" secondAttribute="top" constant="30" id="AhX-ZF-n8l"/>
+                        <constraint firstAttribute="bottom" secondItem="kT4-Ol-ioo" secondAttribute="bottom" constant="30" id="EoG-Jc-16w"/>
+                        <constraint firstAttribute="trailing" secondItem="a7M-q0-oOV" secondAttribute="trailing" constant="8" id="FcC-7P-qE9"/>
+                        <constraint firstItem="B7a-fw-TU4" firstAttribute="top" secondItem="a7M-q0-oOV" secondAttribute="bottom" id="L9W-Xd-6Qi"/>
+                        <constraint firstItem="a7M-q0-oOV" firstAttribute="top" secondItem="F1n-ow-etl" secondAttribute="bottom" constant="30" id="WCc-tc-BQ1"/>
+                        <constraint firstItem="B7a-fw-TU4" firstAttribute="leading" secondItem="UeG-zr-dhB" secondAttribute="leading" constant="8" id="fK1-hY-gQS"/>
+                        <constraint firstItem="kT4-Ol-ioo" firstAttribute="leading" secondItem="UeG-zr-dhB" secondAttribute="leading" constant="20" id="hAo-UJ-97o"/>
+                        <constraint firstItem="a7M-q0-oOV" firstAttribute="leading" secondItem="UeG-zr-dhB" secondAttribute="leading" constant="8" id="hDa-7Z-BT1"/>
+                        <constraint firstItem="kT4-Ol-ioo" firstAttribute="top" secondItem="B7a-fw-TU4" secondAttribute="bottom" constant="30" id="o3m-i8-oLI"/>
+                        <constraint firstAttribute="trailing" secondItem="kT4-Ol-ioo" secondAttribute="trailing" constant="20" id="rpw-wJ-GoN"/>
+                        <constraint firstItem="F1n-ow-etl" firstAttribute="centerX" secondItem="UeG-zr-dhB" secondAttribute="centerX" id="xqN-ki-fsN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="UeG-zr-dhB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="h7k-xm-dLD"/>
+                <constraint firstItem="UeG-zr-dhB" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="ilV-4L-jF9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UeG-zr-dhB" secondAttribute="trailing" constant="20" id="v4Z-Hz-swM"/>
+                <constraint firstItem="UeG-zr-dhB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="y5V-C7-X6x"/>
+            </constraints>
+            <point key="canvasLocation" x="141.53846153846155" y="134.36018957345971"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="kT4-Ol-ioo">
+            <size key="intrinsicContentSize" width="71" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_alert_error" width="60" height="60.333332061767578"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.2630000114440918" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.082000002264976501" green="0.059000000357627869" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

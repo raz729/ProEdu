@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proxima-nova-bold.ttf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="proxima-nova-regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="304" id="KGk-i7-Jjw" customClass="NewsCell" customModule="ProEdu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="304"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="304"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIf-Z5-Hj6" customClass="RoundedView" customModule="ProEdu" customModuleProvider="target">
+                        <rect key="frame" x="20" y="24" width="334" height="183.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SyP-kB-epM">
+                                <rect key="frame" x="0.0" y="0.0" width="334" height="183.5"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plan_test_img" translatesAutoresizingMaskIntoConstraints="NO" id="gxc-fX-MSc">
+                                <rect key="frame" x="0.0" y="0.0" width="334" height="183.5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYd-6W-Er9">
+                                <rect key="frame" x="0.0" y="0.0" width="334" height="183.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBK-92-9EL">
+                                        <rect key="frame" x="147" y="72" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Bao-Ks-BZW"/>
+                                            <constraint firstAttribute="height" constant="40" id="lT6-cp-5OV"/>
+                                        </constraints>
+                                        <state key="normal" image="play_button"/>
+                                        <connections>
+                                            <action selector="playAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kgE-36-Pz0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="FBK-92-9EL" firstAttribute="centerX" secondItem="lYd-6W-Er9" secondAttribute="centerX" id="YKS-Iu-Uau"/>
+                                    <constraint firstItem="FBK-92-9EL" firstAttribute="centerY" secondItem="lYd-6W-Er9" secondAttribute="centerY" id="rKe-br-u63"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lYd-6W-Er9" secondAttribute="bottom" id="42L-8o-Mkf"/>
+                            <constraint firstAttribute="width" secondItem="IIf-Z5-Hj6" secondAttribute="height" multiplier="1:0.55" id="4xg-qW-nYU"/>
+                            <constraint firstItem="gxc-fX-MSc" firstAttribute="top" secondItem="IIf-Z5-Hj6" secondAttribute="top" id="BeF-QW-Isx"/>
+                            <constraint firstAttribute="bottom" secondItem="SyP-kB-epM" secondAttribute="bottom" id="HE7-d2-Y0m"/>
+                            <constraint firstItem="gxc-fX-MSc" firstAttribute="leading" secondItem="IIf-Z5-Hj6" secondAttribute="leading" id="I4P-jI-X6i"/>
+                            <constraint firstItem="SyP-kB-epM" firstAttribute="top" secondItem="IIf-Z5-Hj6" secondAttribute="top" id="MLe-N6-LVZ"/>
+                            <constraint firstItem="SyP-kB-epM" firstAttribute="leading" secondItem="IIf-Z5-Hj6" secondAttribute="leading" id="Ohw-PK-rcu"/>
+                            <constraint firstAttribute="trailing" secondItem="lYd-6W-Er9" secondAttribute="trailing" id="SYs-Qy-zsT"/>
+                            <constraint firstAttribute="trailing" secondItem="SyP-kB-epM" secondAttribute="trailing" id="WfL-oh-8M1"/>
+                            <constraint firstAttribute="bottom" secondItem="gxc-fX-MSc" secondAttribute="bottom" id="f8W-Zz-L2r"/>
+                            <constraint firstItem="lYd-6W-Er9" firstAttribute="top" secondItem="IIf-Z5-Hj6" secondAttribute="top" id="ojJ-jK-EjQ"/>
+                            <constraint firstAttribute="trailing" secondItem="gxc-fX-MSc" secondAttribute="trailing" id="v1y-Hq-b7B"/>
+                            <constraint firstItem="lYd-6W-Er9" firstAttribute="leading" secondItem="IIf-Z5-Hj6" secondAttribute="leading" id="z77-DG-6IX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Прямой эфир по вашим вопросам." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac5-9t-0QZ">
+                        <rect key="frame" x="20" y="223.5" width="334" height="19"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                        <color key="textColor" name="TitleColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Розыгрыш 5 мест на &quot;Марафон столетия&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJV-ui-Opn">
+                        <rect key="frame" x="20" y="244.5" width="334" height="43.5"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                        <color key="textColor" name="GrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCH-PM-1r0">
+                        <rect key="frame" x="20" y="303" width="334" height="1"/>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.11372549019607843" blue="0.21568627450980393" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Mz9-pA-Bsl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IIf-Z5-Hj6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="0x3-Ax-HPW"/>
+                    <constraint firstItem="RJV-ui-Opn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="6g1-eo-u5g"/>
+                    <constraint firstAttribute="bottom" secondItem="RJV-ui-Opn" secondAttribute="bottom" constant="16" id="CvU-Ey-8jf"/>
+                    <constraint firstItem="BCH-PM-1r0" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="J2b-lQ-edd"/>
+                    <constraint firstItem="BCH-PM-1r0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="LeV-Gh-ItP"/>
+                    <constraint firstAttribute="trailing" secondItem="IIf-Z5-Hj6" secondAttribute="trailing" constant="20" id="OSZ-af-bAZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Ac5-9t-0QZ" secondAttribute="trailing" constant="20" id="QHz-nD-s4K"/>
+                    <constraint firstAttribute="trailing" secondItem="RJV-ui-Opn" secondAttribute="trailing" constant="20" id="bAu-CN-CAy"/>
+                    <constraint firstItem="BCH-PM-1r0" firstAttribute="top" secondItem="RJV-ui-Opn" secondAttribute="bottom" constant="15" id="f6D-rh-eDN"/>
+                    <constraint firstAttribute="trailing" secondItem="BCH-PM-1r0" secondAttribute="trailing" constant="20" id="gcq-69-51X"/>
+                    <constraint firstItem="Ac5-9t-0QZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jP6-DW-gO9"/>
+                    <constraint firstItem="RJV-ui-Opn" firstAttribute="top" secondItem="Ac5-9t-0QZ" secondAttribute="bottom" constant="2" id="mOM-Wy-wta"/>
+                    <constraint firstItem="IIf-Z5-Hj6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="pra-N7-bN6"/>
+                    <constraint firstItem="BCH-PM-1r0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vf2-wd-cpn"/>
+                    <constraint firstItem="Ac5-9t-0QZ" firstAttribute="top" secondItem="IIf-Z5-Hj6" secondAttribute="bottom" constant="16" id="wwc-R7-wUm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descLabel" destination="RJV-ui-Opn" id="jwV-wi-ZAv"/>
+                <outlet property="divideView" destination="BCH-PM-1r0" id="vjy-sd-5Bb"/>
+                <outlet property="imgView" destination="gxc-fX-MSc" id="u3c-zA-Lqd"/>
+                <outlet property="nameLabel" destination="Ac5-9t-0QZ" id="6gR-tn-wYN"/>
+                <outlet property="playView" destination="lYd-6W-Er9" id="xTf-b9-o9v"/>
+                <outlet property="videoView" destination="SyP-kB-epM" id="y2A-S3-SwD"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="131.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plan_test_img" width="1122" height="681"/>
+        <image name="play_button" width="60" height="60"/>
+        <namedColor name="GrayColor">
+            <color red="0.41200000047683716" green="0.41200000047683716" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.082000002264976501" green="0.059000000357627869" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

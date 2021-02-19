@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proxima-nova-bold.ttf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="proxima-nova-regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="KGk-i7-Jjw" customClass="StageCell" customModule="ProEdu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-UI-OoL" customClass="RoundedView" customModule="ProEdu" customModuleProvider="target">
+                        <rect key="frame" x="20" y="0.0" width="346" height="57"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6em-XQ-sHT">
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="І - НАЧАЛЬНЫЙ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHA-uH-WPV">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="57"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="14"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4G-Dr-L0K">
+                                        <rect key="frame" x="20" y="56" width="306" height="1"/>
+                                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="6K3-ya-o5H"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="p4G-Dr-L0K" firstAttribute="leading" secondItem="6em-XQ-sHT" secondAttribute="leading" constant="20" id="5ka-Gf-GYS"/>
+                                    <constraint firstAttribute="trailing" secondItem="gHA-uH-WPV" secondAttribute="trailing" id="C48-Hb-lin"/>
+                                    <constraint firstAttribute="trailing" secondItem="p4G-Dr-L0K" secondAttribute="trailing" constant="20" id="Gti-ih-cgc"/>
+                                    <constraint firstAttribute="bottom" secondItem="gHA-uH-WPV" secondAttribute="bottom" id="ISw-71-0R0"/>
+                                    <constraint firstAttribute="bottom" secondItem="p4G-Dr-L0K" secondAttribute="bottom" id="Kl3-Sw-qY6"/>
+                                    <constraint firstItem="gHA-uH-WPV" firstAttribute="leading" secondItem="6em-XQ-sHT" secondAttribute="leading" id="jNw-qs-7S8"/>
+                                    <constraint firstItem="gHA-uH-WPV" firstAttribute="top" secondItem="6em-XQ-sHT" secondAttribute="top" id="kWl-BG-JdP"/>
+                                    <constraint firstAttribute="height" constant="57" id="m1z-dW-Hc5"/>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2x-J1-9NP">
+                                <rect key="frame" x="3" y="72.5" width="340" height="0.0"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                <color key="textColor" name="GrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="375-To-1x3">
+                                <rect key="frame" x="20" y="84.5" width="306" height="18"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fln-Xx-m4v">
+                                        <rect key="frame" x="303" y="0.0" width="3" height="18"/>
+                                        <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="3" id="pqQ-1I-fjl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rt-nb-pfI">
+                                        <rect key="frame" x="151.5" y="0.0" width="3" height="18"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="3" id="APA-Iu-ddD"/>
+                                        </constraints>
+                                    </view>
+                                    <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="jsj-KY-S6h">
+                                        <rect key="frame" x="-2" y="-1" width="310" height="20"/>
+                                        <color key="minimumTrackTintColor" name="AccentColor"/>
+                                        <color key="maximumTrackTintColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    </slider>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Fln-Xx-m4v" secondAttribute="trailing" id="6Bp-6E-AiO"/>
+                                    <constraint firstAttribute="height" constant="18" id="Qn1-TI-pG5"/>
+                                    <constraint firstItem="jsj-KY-S6h" firstAttribute="top" secondItem="375-To-1x3" secondAttribute="top" constant="-1" id="SSQ-Fp-UKH"/>
+                                    <constraint firstAttribute="bottom" secondItem="jsj-KY-S6h" secondAttribute="bottom" id="SX4-fq-lLA"/>
+                                    <constraint firstItem="8Rt-nb-pfI" firstAttribute="centerX" secondItem="375-To-1x3" secondAttribute="centerX" id="UqK-0k-1Vi"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fln-Xx-m4v" secondAttribute="bottom" id="Woy-dO-5W0"/>
+                                    <constraint firstItem="Fln-Xx-m4v" firstAttribute="top" secondItem="375-To-1x3" secondAttribute="top" id="lvT-pF-lNk"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsj-KY-S6h" secondAttribute="trailing" id="pfn-dU-9GC"/>
+                                    <constraint firstItem="jsj-KY-S6h" firstAttribute="leading" secondItem="375-To-1x3" secondAttribute="leading" id="rSn-Lt-WEt"/>
+                                    <constraint firstItem="8Rt-nb-pfI" firstAttribute="top" secondItem="375-To-1x3" secondAttribute="top" id="vxf-jN-1Pl"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Rt-nb-pfI" secondAttribute="bottom" id="yoQ-Ow-9va"/>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 неделя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtT-y3-mL0">
+                                <rect key="frame" x="20" y="110.5" width="50" height="14"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                <color key="textColor" name="GrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 неделя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGr-KQ-dJi">
+                                <rect key="frame" x="148" y="110.5" width="50" height="14"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                <color key="textColor" name="GrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 неделя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBm-Cy-09A">
+                                <rect key="frame" x="276" y="110.5" width="50" height="14"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                <color key="textColor" name="GrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="AtT-y3-mL0" firstAttribute="leading" secondItem="ct2-UI-OoL" secondAttribute="leading" constant="20" id="120-pX-5w9"/>
+                            <constraint firstAttribute="trailing" secondItem="cBm-Cy-09A" secondAttribute="trailing" constant="20" id="1vy-eh-sz6"/>
+                            <constraint firstItem="cBm-Cy-09A" firstAttribute="top" secondItem="375-To-1x3" secondAttribute="bottom" constant="8" id="5sr-4p-Z29"/>
+                            <constraint firstAttribute="trailing" secondItem="375-To-1x3" secondAttribute="trailing" constant="20" id="Bv4-6x-1wg"/>
+                            <constraint firstItem="AtT-y3-mL0" firstAttribute="top" secondItem="375-To-1x3" secondAttribute="bottom" constant="8" id="GTf-9e-LA4"/>
+                            <constraint firstItem="6em-XQ-sHT" firstAttribute="top" secondItem="ct2-UI-OoL" secondAttribute="top" id="Jai-OQ-3IV"/>
+                            <constraint firstItem="jGr-KQ-dJi" firstAttribute="centerX" secondItem="jsj-KY-S6h" secondAttribute="centerX" id="Kx0-8f-MMe"/>
+                            <constraint firstAttribute="height" constant="57" id="Pkf-Pd-fuo"/>
+                            <constraint firstItem="O2x-J1-9NP" firstAttribute="top" secondItem="6em-XQ-sHT" secondAttribute="bottom" constant="15.5" id="Vvi-8c-eDL"/>
+                            <constraint firstItem="6em-XQ-sHT" firstAttribute="leading" secondItem="ct2-UI-OoL" secondAttribute="leading" id="Wpe-fq-Crj"/>
+                            <constraint firstAttribute="trailing" secondItem="O2x-J1-9NP" secondAttribute="trailing" constant="3" id="c6l-sw-anf"/>
+                            <constraint firstItem="O2x-J1-9NP" firstAttribute="leading" secondItem="ct2-UI-OoL" secondAttribute="leading" constant="3" id="kcK-ja-JGc"/>
+                            <constraint firstItem="jGr-KQ-dJi" firstAttribute="top" secondItem="375-To-1x3" secondAttribute="bottom" constant="8" id="nJ5-we-LVH"/>
+                            <constraint firstItem="375-To-1x3" firstAttribute="top" secondItem="O2x-J1-9NP" secondAttribute="bottom" constant="12" id="oKf-Ls-whY"/>
+                            <constraint firstAttribute="trailing" secondItem="6em-XQ-sHT" secondAttribute="trailing" id="reg-xX-5pg"/>
+                            <constraint firstItem="375-To-1x3" firstAttribute="leading" secondItem="ct2-UI-OoL" secondAttribute="leading" constant="20" id="wNN-Wx-PYZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="AccentColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ct2-UI-OoL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="NQ5-ov-HNn"/>
+                    <constraint firstItem="ct2-UI-OoL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="asU-sY-his"/>
+                    <constraint firstAttribute="trailing" secondItem="ct2-UI-OoL" secondAttribute="trailing" constant="20" id="kNV-n6-g1M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="borderView" destination="ct2-UI-OoL" id="j1N-Up-R4J"/>
+                <outlet property="heightConstraint" destination="Pkf-Pd-fuo" id="gMb-OV-VWJ"/>
+                <outlet property="maxWeekLabel" destination="cBm-Cy-09A" id="Zmk-zd-W1I"/>
+                <outlet property="meedWeekLabel" destination="jGr-KQ-dJi" id="dfv-h2-sG0"/>
+                <outlet property="recomendLabel" destination="O2x-J1-9NP" id="KRi-un-Xyy"/>
+                <outlet property="slider" destination="jsj-KY-S6h" id="gtF-7p-aqg"/>
+                <outlet property="sliderView" destination="375-To-1x3" id="0Ai-bT-YtN"/>
+                <outlet property="titleLabel" destination="gHA-uH-WPV" id="7he-fb-ALc"/>
+                <outletCollection property="weekLabels" destination="AtT-y3-mL0" collectionClass="NSMutableArray" id="0ex-Ql-W9K"/>
+                <outletCollection property="weekLabels" destination="jGr-KQ-dJi" collectionClass="NSMutableArray" id="oX6-fu-heH"/>
+                <outletCollection property="weekLabels" destination="cBm-Cy-09A" collectionClass="NSMutableArray" id="EEV-xO-9cD"/>
+            </connections>
+            <point key="canvasLocation" x="185.50724637681162" y="150.66964285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.2630000114440918" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayColor">
+            <color red="0.41200000047683716" green="0.41200000047683716" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proxima-nova-bold.ttf">
+            <string>ProximaNova-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsCategoryCell" customModule="ProEdu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="58" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="58" height="52"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nj0-Ha-Wq7">
+                        <rect key="frame" x="0.0" y="50" width="58" height="2"/>
+                        <color key="backgroundColor" name="LiteGreen"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Es0-pY-erZ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВСЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNF-cZ-P1o">
+                        <rect key="frame" x="0.0" y="22.5" width="58" height="16.5"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="14"/>
+                        <color key="textColor" name="TitleColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="nj0-Ha-Wq7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Na-Zb-zJ3"/>
+                <constraint firstItem="iNF-cZ-P1o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="J9y-DZ-IjX"/>
+                <constraint firstAttribute="bottom" secondItem="nj0-Ha-Wq7" secondAttribute="bottom" id="Lbn-Qq-SpL"/>
+                <constraint firstAttribute="trailing" secondItem="nj0-Ha-Wq7" secondAttribute="trailing" id="Y3z-mk-zOo"/>
+                <constraint firstAttribute="trailing" secondItem="iNF-cZ-P1o" secondAttribute="trailing" id="bJS-q4-P8C"/>
+                <constraint firstItem="nj0-Ha-Wq7" firstAttribute="top" secondItem="iNF-cZ-P1o" secondAttribute="bottom" constant="11" id="gqM-JM-pGi"/>
+            </constraints>
+            <size key="customSize" width="76" height="50"/>
+            <connections>
+                <outlet property="nameLabel" destination="iNF-cZ-P1o" id="w1u-nY-dkH"/>
+                <outlet property="selectedView" destination="nj0-Ha-Wq7" id="8Gx-UT-oPG"/>
+            </connections>
+            <point key="canvasLocation" x="156.52173913043478" y="112.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="LiteGreen">
+            <color red="0.41999998688697815" green="0.74500000476837158" blue="0.46299999952316284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="0.082000002264976501" green="0.059000000357627869" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

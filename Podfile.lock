@@ -1,0 +1,27 @@
+PODS:
+  - PhoneNumberKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.3.3)
+    - PhoneNumberKit/UIKit (= 3.3.3)
+  - PhoneNumberKit/PhoneNumberKitCore (3.3.3)
+  - PhoneNumberKit/UIKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+
+DEPENDENCIES:
+  - PhoneNumberKit (~> 3.3)
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - PhoneNumberKit
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  PhoneNumberKit: 4ce83273551c4d2ae10b7361162f4283dd02835f
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+
+PODFILE CHECKSUM: 8b3ec8e91354f040262858a7166d04c58ca8c39e
+
+COCOAPODS: 1.10.0

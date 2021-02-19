@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proxima-nova-regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Рецепты-->
+        <scene sceneID="Rzy-jZ-IhJ">
+            <objects>
+                <viewController id="nZW-D5-gJU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xq8-Zw-rwr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1zL-iJ-Evb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-sx-FlC">
+                                <rect key="frame" x="10.5" y="344" width="393" height="37.5"/>
+                                <string key="text">Данная страница находится в разработке.
+Приносим извинения за временные неудобства.</string>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" name="GrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_recipes_settings" translatesAutoresizingMaskIntoConstraints="NO" id="z0j-jQ-CuB">
+                                <rect key="frame" x="167" y="234" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Cdk-NC-tM0"/>
+                                    <constraint firstAttribute="width" constant="80" id="zvf-Cs-aAd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cXX-D8-Xn6"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vGG-sx-FlC" firstAttribute="centerX" secondItem="cXX-D8-Xn6" secondAttribute="centerX" id="4F0-sm-1bI"/>
+                            <constraint firstItem="vGG-sx-FlC" firstAttribute="top" secondItem="z0j-jQ-CuB" secondAttribute="bottom" constant="30" id="9pF-D4-0A3"/>
+                            <constraint firstItem="vGG-sx-FlC" firstAttribute="width" secondItem="xq8-Zw-rwr" secondAttribute="width" multiplier="0.95" id="GAu-1g-BB6"/>
+                            <constraint firstItem="1zL-iJ-Evb" firstAttribute="leading" secondItem="cXX-D8-Xn6" secondAttribute="leading" id="Ssk-iv-son"/>
+                            <constraint firstItem="vGG-sx-FlC" firstAttribute="centerY" secondItem="cXX-D8-Xn6" secondAttribute="centerY" id="cpi-x0-jd4"/>
+                            <constraint firstItem="1zL-iJ-Evb" firstAttribute="bottom" secondItem="cXX-D8-Xn6" secondAttribute="bottom" id="i1B-V6-wur"/>
+                            <constraint firstItem="z0j-jQ-CuB" firstAttribute="centerX" secondItem="vGG-sx-FlC" secondAttribute="centerX" id="iYG-Db-7cQ"/>
+                            <constraint firstItem="1zL-iJ-Evb" firstAttribute="trailing" secondItem="cXX-D8-Xn6" secondAttribute="trailing" id="olz-Ch-cXM"/>
+                            <constraint firstItem="1zL-iJ-Evb" firstAttribute="top" secondItem="cXX-D8-Xn6" secondAttribute="top" id="zHi-7z-NY2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Рецепты" id="6sb-eP-zxx">
+                        <barButtonItem key="backBarButtonItem" title=" " id="W2f-QY-iVY"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vq-m2-K3S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458" y="1628"/>
+        </scene>
+        <!--Рецепты-->
+        <scene sceneID="X5A-w3-krT">
+            <objects>
+                <navigationController storyboardIdentifier="recipesNavVC" automaticallyAdjustsScrollViewInsets="NO" id="uOw-ae-Rkc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Рецепты" image="tab_recipes" selectedImage="tab_recipes_selected" id="Fsn-0e-yyW">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="lcJ-ic-jXy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="AccentColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GhH-3s-n8P">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="nZW-D5-gJU" kind="relationship" relationship="rootViewController" id="ZkQ-HN-8dx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FG7-uu-2in" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="1628"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="414" height="900"/>
+        <image name="ic_recipes_settings" width="80" height="80"/>
+        <image name="tab_recipes" width="20" height="20"/>
+        <image name="tab_recipes_selected" width="20" height="20"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.2630000114440918" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundColor">
+            <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayColor">
+            <color red="0.41200000047683716" green="0.41200000047683716" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
